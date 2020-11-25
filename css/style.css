@@ -1,6 +1,9 @@
 /* DEBUG */
+.debug [class*="col-"] {
+  height: 100%;
+}
 
-.debug_bg {
+.debug_lgrey {
   background-color: lightgrey;
 }
 
@@ -8,17 +11,30 @@
   height: 100px;
 }
 
+.debug_h400 {
+  height: 400px;
+}
+
+.debug_border {
+  border: 2px solid black;
+}
+
 .debug_dblue {
   background-color: darkblue;
-  height: 100%;
+}
+
+.debug_sgreen {
+  background-color: seagreen;
 }
 
 .debug_lblue {
   background-color: lightblue;
-  height: 100%;
 }
 
 .debug_sal {
   background-color: salmon;
-  height: 100%;
+}
+
+.debug_white {
+  background-color: white;
 }
