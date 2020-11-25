@@ -1,0 +1,24 @@
+/* DEBUG */
+
+.debug_bg {
+  background-color: lightgrey;
+}
+
+.debug_h100 {
+  height: 100px;
+}
+
+.debug_dblue {
+  background-color: darkblue;
+  height: 100%;
+}
+
+.debug_lblue {
+  background-color: lightblue;
+  height: 100%;
+}
+
+.debug_sal {
+  background-color: salmon;
+  height: 100%;
+}
