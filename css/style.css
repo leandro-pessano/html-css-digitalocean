@@ -1,5 +1,9 @@
 /* DEBUG */
 
+section {
+  padding: 60px;
+}
+
 /* Heights & Widths */
 .debug [class*="col-"] {
   height: 100%;
