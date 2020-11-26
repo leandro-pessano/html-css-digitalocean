@@ -46,7 +46,19 @@ section {
   background-color: white;
 }
 
-/* Header */
+
+h1, h2 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
 ul {
   list-style: none;
 }
@@ -80,7 +92,19 @@ ul {
   color: #031c4e;
 }
 
+.ms_white {
+  color: white;
+}
+
+.bg_white {
+  background-color: white;
+}
+
 /* Buttons */
+[class*="btn_"] {
+  font-weight: 900;
+}
+
 a.btn_blue {
   padding: 10px;
   color: #0069fe;
@@ -91,6 +115,24 @@ a.btn_blue {
 a.btn_blue:hover {
   color: white;
   background-color: #0069fe;
+}
+
+.btn_account {
+  background-color: #579aff;
+  color: white;
+}
+
+.btn_account:hover {
+  background-color: #0069fe;
+  color: white;
+}
+
+.btn_google {
+  color: #626262;
+  background-image: url(../img/logo_google);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 2%;
 }
 
 /* Header */
@@ -121,6 +163,7 @@ header .ms_nav_c li:nth-child(odd) a::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f078";
+  margin-left: 2px;
 }
 
 header .ms_nav_r ul {
@@ -131,6 +174,7 @@ header .ms_nav_r li:nth-child(2) a::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f078";
+  margin-left: 2px;
 }
 
 header .ms_nav_r li:last-child {
@@ -139,4 +183,59 @@ header .ms_nav_r li:last-child {
 
 .jumbotron {
   margin-top: 70px;
+  background-image: url(../img/bg-home-1.jpg);
+}
+
+.jumbotron [class*="col-"]:first-child {
+  padding-right: 60px;
+}
+
+.jumbotron .ms_login {
+  padding: 36px 20px;
+  border-radius: 5px;
+}
+
+.jumbotron .ms_login h2 {
+  margin-top: 0;
+}
+
+.jumbotron .ms_login input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.jumbotron .ms_login input:not([type="submit"]) {
+  height: 40px;
+}
+
+.jumbotron .ms_login input:not([type="submit"]):hover,
+.jumbotron .ms_login input:not([type="submit"]):active,
+.jumbotron .ms_login input:not([type="submit"]):focus {
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+@media screen and (min-width:768px) {
+
+  .jumbotron h1 {
+    font-size: 43px;
+  }
+}
+
+@media screen and (min-width:992px) {
+
+  .jumbotron h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+
+  .jumbotron h1 {
+    font-size: 63px;
+  }
 }
