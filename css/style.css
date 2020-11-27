@@ -1,9 +1,5 @@
 /* DEBUG */
 
-section {
-  padding: 60px;
-}
-
 /* Heights & Widths */
 .debug [class*="col-"] {
   height: 100%;
@@ -45,7 +41,11 @@ section {
 .debug_white {
   background-color: white;
 }
+/* DEBUG END */
 
+section {
+  padding: 40px;
+}
 
 h1, h2 {
   font-weight: 900;
@@ -57,6 +57,11 @@ h1 {
 
 h2 {
   font-size: 24px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 900;
 }
 
 ul {
@@ -96,8 +101,20 @@ ul {
   color: white;
 }
 
+.ms_lgrey {
+  color: #bbcbfd;
+}
+
+.ms_grey {
+  color: #6f7b97;
+}
+
 .bg_white {
   background-color: white;
+}
+
+.bg_grey {
+  background-color: #f3f5f9;
 }
 
 /* Buttons */
@@ -181,13 +198,19 @@ header .ms_nav_r li:last-child {
   margin-right: 0;
 }
 
+/* Jumbotron */
 .jumbotron {
   margin-top: 70px;
+  margin-bottom: 0;
   background-image: url(../img/bg-home-1.jpg);
 }
 
 .jumbotron [class*="col-"]:first-child {
   padding-right: 60px;
+}
+
+.jumbotron p {
+  font-weight: 900;
 }
 
 .jumbotron .ms_login {
@@ -215,10 +238,38 @@ header .ms_nav_r li:last-child {
   border-radius: 2px;
 }
 
+/* Customers */
+#customers h4 {
+  text-transform: uppercase;
+}
+
+#customers .row .row {
+  line-height: 140px;
+}
+
+#customers :not([class*="col-"]):last-child img {
+  height: 77px;
+}
+
+#customers [class*="col-"]:last-child img {
+  margin-top: 4px;
+  height: 37px;
+}
+
+/* Responsiveness */
 @media screen and (min-width:768px) {
 
   .jumbotron h1 {
     font-size: 38px;
+  }
+
+  #customers :not([class*="col-"]):last-child img {
+    height: 50px;
+  }
+
+  #customers [class*="col-"]:last-child img {
+    margin-top: 4px;
+    height: 22px;
   }
 }
 
@@ -230,6 +281,15 @@ header .ms_nav_r li:last-child {
 
   h2 {
     font-size: 30px;
+  }
+
+  #customers :not([class*="col-"]):last-child img {
+    height: 67px;
+  }
+
+  #customers [class*="col-"]:last-child img {
+    margin-top: 4px;
+    height: 27px;
   }
 }
 
