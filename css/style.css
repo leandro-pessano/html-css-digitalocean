@@ -44,7 +44,7 @@
 /* DEBUG END */
 
 section {
-  padding: 40px;
+  padding: 40px 0;
 }
 
 h1, h2 {
@@ -70,6 +70,28 @@ ul {
 
 .ms_links a {
   text-decoration: none;
+}
+
+.ms_uppercase {
+  text-transform: uppercase;
+}
+
+.ms_circles i {
+  margin-top: 20px;
+}
+
+.ms_circles i:hover {
+  background-color: #0069fe;
+  border-radius: 50%;
+}
+
+i.hidden-xs {
+  font-size: 60px;
+  vertical-align: middle;
+}
+
+i.hidden-xs:hover {
+  color: #031c4e;
 }
 
 /* Colors */
@@ -102,11 +124,15 @@ ul {
 }
 
 .ms_lgrey {
-  color: #bbcbfd;
+  color: #a6adbd;
 }
 
 .ms_grey {
   color: #6f7b97;
+}
+
+.ms_dgrey {
+  color: #5c6a88;
 }
 
 .bg_white {
@@ -117,6 +143,10 @@ ul {
   background-color: #f3f5f9;
 }
 
+.bg_dblue {
+  background-color: #031c4e;
+}
+
 /* Buttons */
 [class*="btn_"] {
   font-weight: 900;
@@ -125,8 +155,10 @@ ul {
 a.btn_blue {
   padding: 10px;
   color: #0069fe;
+  background-color: white;
   border: 1px solid #0069fe;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 a.btn_blue:hover {
@@ -201,6 +233,7 @@ header .ms_nav_r li:last-child {
 /* Jumbotron */
 .jumbotron {
   margin-top: 70px;
+  padding: 40px 10px;
   margin-bottom: 0;
   background-image: url(../img/bg-home-1.jpg);
 }
@@ -256,6 +289,149 @@ header .ms_nav_r li:last-child {
   height: 37px;
 }
 
+/* Info */
+#info .text-center p,
+#info  ul li {
+  font-size: 21px;
+}
+
+#info .row.text-left {
+  padding: 20px 0;
+}
+
+#info ul {
+  padding-left: 0;
+  padding-bottom: 20px;
+}
+
+#info ul li {
+  padding: 10px;
+  border-left: 1px solid #bbcbfd;
+}
+
+#info img {
+  margin-bottom: 10px;
+}
+
+#info p {
+  margin-bottom: 40px;
+}
+
+/* Design */
+#design p {
+  font-size: 21px;
+  margin: 30px 0 40px;
+}
+
+#design img {
+  width: 70%;
+  padding: 25px;
+}
+
+/* Features */
+#features .row [class*="col-"]:not(:first-child) {
+  padding-top: 40px;
+}
+
+/* Test Speed */
+#test_speed {
+  background-image: linear-gradient(#0048c5, #001e9a);
+  font-weight: 900;
+}
+
+#test_speed .row .row {
+  line-height: 3;
+}
+
+#test_speed .row.text-left {
+  margin: 5px;
+}
+
+#test_speed .row.text-left .col-xs-4 {
+  text-align: right;
+}
+
+#test_speed .row.text-left:last-child {
+  margin-bottom: 30px;
+}
+
+#test_speed .row.text-left:not(:first-child) {
+  border-top: 1px solid white;
+}
+
+#test_speed a {
+  color: #00d5d1;
+}
+
+#test_speed a:hover {
+  color: #0069fe;
+}
+
+/* Development */
+#develop {
+  padding: 60px 0;
+}
+
+#develop .ms_box {
+  display: inline-block;
+  margin: 15px;
+  padding: 60px 5px;
+  vertical-align: middle;
+}
+
+#develop h2 {
+  margin-bottom: 60px;
+}
+
+#develop .ms_box img {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+#develop p {
+  font-size: 21px;
+}
+
+#develop h5 {
+  margin-bottom: 30px;
+}
+
+/* Start Now */
+#start {
+  background-image: linear-gradient(#0048c5, #001e9a);
+  font-weight: 900;
+  padding-bottom: 60px;
+}
+
+#start h2 {
+  margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+  padding: 60px 0;
+}
+
+footer img {
+  margin-bottom: 10px;
+}
+
+footer i {
+  margin-top: 15px;
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+footer ul {
+  padding-top: 10px;
+  padding-left: 0;
+}
+
+footer ul li {
+  line-height: 2;
+  font-weight: 900;
+}
+
 /* Responsiveness */
 @media screen and (min-width:768px) {
 
@@ -270,6 +446,14 @@ header .ms_nav_r li:last-child {
   #customers [class*="col-"]:last-child img {
     margin-top: 4px;
     height: 22px;
+  }
+
+  #info .row.text-left {
+    padding-left: 8%;
+  }
+
+  #develop .ms_box {
+    width: 50%;
   }
 }
 
@@ -296,6 +480,6 @@ header .ms_nav_r li:last-child {
 @media screen and (min-width:1200px) {
 
   .jumbotron h1 {
-    font-size: 63px;
+    font-size: 60px;
   }
 }
